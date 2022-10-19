@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "344467403485",
+    "project_id": "photopostapplication",
+    "storage_bucket": "photopostapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344467403485:android:035c60ae4f37f0d0a2a134",
+        "android_client_info": {
+          "package_name": "com.yusufcancakmak.photopostapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "344467403485-7onubbp13vj4k064ctms7ip0q6bmu6b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrGfFpxOjiHhNjbKwS9gaVbjtueTQvtT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "344467403485-7onubbp13vj4k064ctms7ip0q6bmu6b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
