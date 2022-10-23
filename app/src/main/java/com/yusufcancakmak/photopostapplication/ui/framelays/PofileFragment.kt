@@ -1,4 +1,4 @@
-package com.yusufcancakmak.photopostapplication.framelays
+package com.yusufcancakmak.photopostapplication.ui.framelays
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

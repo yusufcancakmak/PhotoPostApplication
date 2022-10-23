@@ -1,4 +1,4 @@
-package com.yusufcancakmak.photopostapplication.framelays
+package com.yusufcancakmak.photopostapplication.ui.framelays
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -11,7 +11,6 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import com.yusufcancakmak.photopostapplication.data.Post
-import com.yusufcancakmak.photopostapplication.PostAdapter
 import com.yusufcancakmak.photopostapplication.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {

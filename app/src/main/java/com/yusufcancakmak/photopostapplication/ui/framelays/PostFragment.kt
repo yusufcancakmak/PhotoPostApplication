@@ -1,4 +1,4 @@
-package com.yusufcancakmak.photopostapplication.framelays
+package com.yusufcancakmak.photopostapplication.ui.framelays
 
 import android.Manifest
 import android.app.Activity

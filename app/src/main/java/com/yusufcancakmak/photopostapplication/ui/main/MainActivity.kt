@@ -5,10 +5,10 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.yusufcancakmak.photopostapplication.R
 import com.yusufcancakmak.photopostapplication.databinding.ActivityMainBinding
-import com.yusufcancakmak.photopostapplication.framelays.HomeFragment
-import com.yusufcancakmak.photopostapplication.framelays.PofileFragment
-import com.yusufcancakmak.photopostapplication.framelays.PostFragment
-import com.yusufcancakmak.photopostapplication.framelays.SettingsFragment
+import com.yusufcancakmak.photopostapplication.ui.framelays.HomeFragment
+import com.yusufcancakmak.photopostapplication.ui.framelays.PofileFragment
+import com.yusufcancakmak.photopostapplication.ui.framelays.PostFragment
+import com.yusufcancakmak.photopostapplication.ui.framelays.SettingsFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -17,10 +17,10 @@ class MainActivity : AppCompatActivity() {
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val homeFragment=HomeFragment()
-        val postFragment=PostFragment()
-        val settingsFragment=SettingsFragment()
-        val profileFragment=PofileFragment()
+        val homeFragment= HomeFragment()
+        val postFragment= PostFragment()
+        val settingsFragment= SettingsFragment()
+        val profileFragment= PofileFragment()
 
         makeCurruntFragment(homeFragment)
 
