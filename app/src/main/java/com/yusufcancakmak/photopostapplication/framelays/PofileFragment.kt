@@ -9,10 +9,8 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
-import com.google.firebase.firestore.auth.User
 import com.google.firebase.storage.FirebaseStorage
-import com.yusufcancakmak.photopostapplication.Post
-import com.yusufcancakmak.photopostapplication.R
+import com.yusufcancakmak.photopostapplication.data.Post
 import com.yusufcancakmak.photopostapplication.databinding.FragmentPofileBinding
 
 class PofileFragment : Fragment() {

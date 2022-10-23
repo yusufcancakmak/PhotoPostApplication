@@ -2,7 +2,6 @@ package com.yusufcancakmak.photopostapplication.framelays
 
 import android.Manifest
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
@@ -11,7 +10,6 @@ import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
-import android.provider.MediaStore.Images.Media
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -19,12 +17,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import androidx.core.content.contentValuesOf
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
-import com.yusufcancakmak.photopostapplication.MainActivity
-import com.yusufcancakmak.photopostapplication.R
+import com.yusufcancakmak.photopostapplication.ui.main.MainActivity
 import com.yusufcancakmak.photopostapplication.databinding.FragmentPostBinding
 import java.util.UUID
 
@@ -75,7 +71,7 @@ open class PostFragment : Fragment() {
                         database.collection("Post").add(postHashMap).addOnCompleteListener {
                             if (it.isSuccessful){
                               Toast.makeText(activity,"Finished",Toast.LENGTH_SHORT).show()
-                                val intent=Intent(activity,MainActivity::class.java)
+                                val intent=Intent(activity, MainActivity::class.java)
                                 startActivity(intent)
 
                             }

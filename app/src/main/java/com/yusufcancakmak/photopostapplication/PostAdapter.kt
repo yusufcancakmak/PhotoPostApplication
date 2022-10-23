@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
+import com.yusufcancakmak.photopostapplication.data.Post
 import kotlinx.android.synthetic.main.rv_row.view.*
 
 class PostAdapter(val postList: ArrayList<Post>) :RecyclerView.Adapter<PostAdapter.PostHolder> (){

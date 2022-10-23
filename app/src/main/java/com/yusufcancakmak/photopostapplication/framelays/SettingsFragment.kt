@@ -7,11 +7,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.yusufcancakmak.photopostapplication.R
-import com.yusufcancakmak.photopostapplication.RegisterActivity
-import com.yusufcancakmak.photopostapplication.databinding.ActivityRegisterBinding
+import com.yusufcancakmak.photopostapplication.ui.auth.RegisterActivity
 import com.yusufcancakmak.photopostapplication.databinding.FragmentSettingsBinding
 
 class SettingsFragment : Fragment() {
@@ -30,7 +27,7 @@ class SettingsFragment : Fragment() {
 
         binding.button.setOnClickListener {
             auth.signOut()
-            val intent=Intent(this.activity,RegisterActivity::class.java)
+            val intent=Intent(this.activity, RegisterActivity::class.java)
             startActivity(intent)
 
 

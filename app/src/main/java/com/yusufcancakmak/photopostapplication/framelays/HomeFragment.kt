@@ -10,9 +10,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
-import com.yusufcancakmak.photopostapplication.Post
+import com.yusufcancakmak.photopostapplication.data.Post
 import com.yusufcancakmak.photopostapplication.PostAdapter
-import com.yusufcancakmak.photopostapplication.R
 import com.yusufcancakmak.photopostapplication.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -56,7 +55,7 @@ class HomeFragment : Fragment() {
                             val usercomment=document.get("kullaniciyorumu") as String
                             val ımageurl =document.get("gorselurl") as String
 
-                            val dowlandPost =Post(useremail,usercomment,ımageurl)
+                            val dowlandPost = Post(useremail,usercomment,ımageurl)
                             postList.add(dowlandPost)
                         }
                         adapter.notifyDataSetChanged()

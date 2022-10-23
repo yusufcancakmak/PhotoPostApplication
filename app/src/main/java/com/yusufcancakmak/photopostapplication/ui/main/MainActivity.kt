@@ -1,8 +1,9 @@
-package com.yusufcancakmak.photopostapplication
+package com.yusufcancakmak.photopostapplication.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.yusufcancakmak.photopostapplication.R
 import com.yusufcancakmak.photopostapplication.databinding.ActivityMainBinding
 import com.yusufcancakmak.photopostapplication.framelays.HomeFragment
 import com.yusufcancakmak.photopostapplication.framelays.PofileFragment
@@ -25,10 +26,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.bottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.item_home->makeCurruntFragment(homeFragment)
-                R.id.item_post->makeCurruntFragment(postFragment)
-                R.id.item_profile->makeCurruntFragment(profileFragment)
-                R.id.item_setting->makeCurruntFragment(settingsFragment)
+                R.id.item_home ->makeCurruntFragment(homeFragment)
+                R.id.item_post ->makeCurruntFragment(postFragment)
+                R.id.item_profile ->makeCurruntFragment(profileFragment)
+                R.id.item_setting ->makeCurruntFragment(settingsFragment)
 
             }
             true
